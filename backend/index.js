@@ -10,7 +10,7 @@ const io = require("socket.io")(server, {
 });
 const PORT = 8000;
 app.get("/", (req, res) => {
-  res.send('<h1>Chat App With Node.js, Socket.Io and React JS');
+  res.send('<h1>Chat App With Node.js, Socket.Io and React JS</h1>');
 });
 io.on("connection", (socket) => {
   console.log("Bir kullanici baglandı!", 'id:', socket.id);
